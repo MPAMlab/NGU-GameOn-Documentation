@@ -1,14 +1,14 @@
-# NGU-Digest-Documentation
+# NGU-GameOn-Documentation
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-**NGU Digest** is a non-commercial video project created by the NGU Team in collaboration with the MPAM Laboratory, directly paying homage to the QuizKnock YouTube Channel. Our aim is to delve into intriguing aspects of Rhythm Games. This documentation repository serves as a detailed record and archive, including:
+**NGU GameOn** is a non-commercial video project created by the NGU Team in collaboration with the MPAM Laboratory, directly paying homage to the QuizKnock YouTube Channel. Our aim is to delve into intriguing aspects of Rhythm Games. This documentation repository serves as a detailed record and archive, including:
 
 - **Pre-production scripts**
 - **Production scripts and notifications** for our casts
 - **Post-production scripts**
 
-**NGU Digest** is designed as an episode-limited series. Our production workflow is structured as follows: **Pre-production** → **Rolling** → **Post-production** → **Publish**. The **Publish** stage indicates the completion of all production processes.
+**NGU GameOn** is designed as an episode-limited series. Our production workflow is structured as follows: **Pre-production** → **Rolling** → **Post-production** → **Publish**. The **Publish** stage indicates the completion of all production processes.
 
 Please note that copyrighted materials, such as music and images, will not be included in this repository.
 
