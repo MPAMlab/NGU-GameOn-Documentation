@@ -14,13 +14,26 @@ Please note that copyrighted materials, such as music and images, will not be in
 
 More on our homepage: 
 
-https://NGU-Team.srt.pub/ 
-
 https://MPAM-Lab.xyz/
+
+## File Structure
+
+- **`ep1-GuessWiki/`** — everything for Episode 1 ("GuessWiki").
+  - `NGU-GameOn-ep1-Timeline.drp` — the DaVinci Resolve project/timeline archive.
+  - `Questions/` — per-question scripts and answer notes (`1.txt`–`5.txt`, `test.txt`).
+  - `images/` — post-production graphics: thumbnails (`封面-16by9.png`, `封面-4by3.png`) and the `包装/` folder of on-screen packaging assets (rendered PNG/MP4 plus Affinity `.af`/`.afdesign`/`.afphoto` sources, including the `words/` character-by-character reveal frames).
+- **`通用包装素材/`** — reusable packaging assets shared across episodes (safe guides, borders, etc.).
+- **`灯射来红 （NGU Team）x MPAM Laboratory 视频选题企划.xlsx`** — the episode planning/topic sheet.
+- **`LICENSE`**, **`README.md`** — repository-level files.
+
+> **Note on original footage**
+>
+> The original footage (raw camera and gameplay recordings) is **not available to the public** and is **not distributed with this repository**. The `.drp` timeline is shared as a reference for our editing structure; because the media it points to is absent, it will open with offline/unlinked clips. Copyrighted materials, such as music and images, are likewise excluded.
 
 ## Table of Contents
 
-TBD.
+- [File Structure](#file-structure)
+- [License](#license)
 
 ## License
 
