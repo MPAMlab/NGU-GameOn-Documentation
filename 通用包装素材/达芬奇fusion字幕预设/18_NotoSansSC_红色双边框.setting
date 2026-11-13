@@ -1,0 +1,121 @@
+{
+	Tools = ordered() {
+		NotoSansSC_RedDoubleStroke = GroupOperator {
+			CtrlWZoom = false,
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "StyledText",
+					Name = "字幕内容",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Font",
+					Name = "字体",
+					ControlGroup = 2,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Style",
+					Name = "字重",
+					ControlGroup = 2,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Size",
+					Name = "字幕大小",
+					Default = 0.15,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Center",
+					Name = "字幕位置",
+				},
+				Input6 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Thickness2",
+					Name = "白色边框粗细",
+					Default = 0.08,
+				},
+				Input7 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Thickness4",
+					Name = "红色边框粗细",
+					Default = 0.12,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+			},
+			Tools = ordered() {
+				Text1 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input { Value = { 0.5, 0.5 }, },
+						StyledText = Input { Value = "点击输入字幕内容", },
+						Font = Input { Value = "Noto Sans SC", },
+						Style = Input { Value = "Black", },
+						Size = Input { Value = 0.15, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						VerticalJustificationNew = Input { Value = 3, },
+						SelectElement = Input { Value = 1, },
+						Select = Input { Value = 1, },
+
+						-- Layer 1: 文字填充 (Fill)
+						Enabled1 = Input { Value = 1, },
+						Type1 = Input { Value = 0, },
+						Red1 = Input { Value = 1.0, },
+						Green1 = Input { Value = 0.08, },
+						Blue1 = Input { Value = 0.08, },
+						Alpha1 = Input { Value = 1.0, },
+
+						-- Layer 2: 白色描边 (紧贴文字的内层边框)
+						Enabled2 = Input { Value = 1, },
+						Type2 = Input { Value = 1, },
+						ElementShape2 = Input { Value = 1, },
+						Red2 = Input { Value = 1.0, },
+						Green2 = Input { Value = 1.0, },
+						Blue2 = Input { Value = 1.0, },
+						Alpha2 = Input { Value = 1.0, },
+						Thickness2 = Input { Value = 0.08, },
+						Softness2 = Input { Value = 0, },
+
+						-- Layer 3: 明确关闭
+						Enabled3 = Input { Value = 0, },
+
+						-- Layer 4: 外层描边 (最外层颜色)
+						Enabled4 = Input { Value = 1, },
+						Type4 = Input { Value = 1, },
+						ElementShape4 = Input { Value = 1, },
+						Red4 = Input { Value = 1.0, },
+						Green4 = Input { Value = 0.08, },
+						Blue4 = Input { Value = 0.08, },
+						Alpha4 = Input { Value = 1.0, },
+						Thickness4 = Input { Value = 0.12, },
+						Softness4 = Input { Value = 1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 0, 0, }, },
+				},
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0, }, },
+		},
+		MediaOut1 = MediaOut {
+			Inputs = {
+				Index = Input { Value = "0", },
+				Input = Input {
+					SourceOp = "NotoSansSC_RedDoubleStroke",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 220, 0, }, },
+		},
+	},
+	ActiveTool = "MediaOut1",
+}
